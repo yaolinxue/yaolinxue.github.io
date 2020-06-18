@@ -1,0 +1,26 @@
+{
+  "name": "bytesgo.com",
+  "version": "1.0.0",
+  "description": "bytesgo.com",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bytesgo/bytesgo.com.git"
+  },
+  "keywords": [
+    "bytesgo"
+  ],
+  "author": "leeyazhou",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bytesgo/bytesgo.com/issues"
+  },
+  "homepage": "https://github.com/bytesgo/bytesgo.com#readme",
+  "dependencies": {
+    "vuepress": "^1.5.2"
+  }
+}
