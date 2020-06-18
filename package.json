@@ -4,8 +4,8 @@
   "description": "bytesgo.com",
   "main": "index.js",
   "scripts": {
-    "dev": "vuepress dev docs",
-    "build": "vuepress build docs"
+    "dev": "vuepress dev .",
+    "build": "vuepress build ."
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,11 @@
     "url": "https://github.com/bytesgo/bytesgo.com/issues"
   },
   "homepage": "https://github.com/bytesgo/bytesgo.com#readme",
+  "devDependencies": {
+    "vuepress": "^1.5.2",
+    "vuepress-theme-reco": "1.4.6"
+  },
   "dependencies": {
-    "vuepress": "^1.5.2"
+    "vue-class-component": "^7.2.3"
   }
 }
