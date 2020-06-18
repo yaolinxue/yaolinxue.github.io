@@ -1,3 +1,3 @@
-# test 首页
+# Hello VuePress
 
-乐山大佛
+Hello VuePress
