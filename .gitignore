@@ -253,4 +253,4 @@ $RECYCLE.BIN/
 
 node_modules
 docs/.vuepress/dist
-public
+dist
