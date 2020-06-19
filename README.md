@@ -1,8 +1,9 @@
 ---
 home: true
-heroText: vuepress-theme-reco
+heroText: 重新出发
 tagline: A simple and beautiful vuepress blog theme.
-# heroImage: /hero.png
+# heroImage: /img/hero.png
+# bgImage: /img/hero2.png
 # heroImageStyle: {
 #   maxWidth: '600px',
 #   width: '100%',
@@ -14,7 +15,7 @@ tagline: A simple and beautiful vuepress blog theme.
 bgImageStyle: {
   height: '450px'
 }
-isShowTitleInHome: false
+isShowTitleInHome: true
 actionText: Guide
 actionLink: /views/other/guide
 features:

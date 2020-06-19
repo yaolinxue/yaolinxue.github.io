@@ -9,13 +9,13 @@ module.exports = {
   theme: 'reco',
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/', icon: 'reco-home' },
-      { text: 'TimeLine', link: '/timeline/', icon: 'reco-date' },
+      { text: '首页', link: '/', icon: 'reco-home' },
+      { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
       {
         text: 'Docs',
         icon: 'reco-message',
         items: [
-          { text: 'vuepress-reco', link: '/docs/theme-reco/' }
+          { text: 'api', link: '/docs/api/' }
         ]
       },
       {
@@ -54,10 +54,9 @@ module.exports = {
         link: 'https://blog.bytesgo.com'
       },
       {
-        title: 'vuepress-theme-reco',
+        title: 'bytesgo.com',
         desc: 'A simple and beautiful vuepress Blog & Doc theme.',
-        avatar: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        link: 'https://vuepress-theme-reco.recoluan.com'
+        link: 'https://blog.bytesgo.com'
       },
     ],
     logo: '/logo.png',
@@ -73,9 +72,10 @@ module.exports = {
     // 作者头像
     authorAvatar: '/avatar.png',
     // 备案号
-    record: 'xxxx',
+    // record: 'xxxx',
     // 项目开始时间
-    startYear: '2020'
+    startYear: '2020',
+    showAccessNumber:true
     /**
      * 密钥 (if your blog is private)
      */
