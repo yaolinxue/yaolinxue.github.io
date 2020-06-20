@@ -4,22 +4,24 @@ module.exports = {
   dest: 'dist',
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
-    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
+    ["script", { src: "/js/demo.js" }]
   ],
   theme: 'reco',
+  plugins: ['@vuepress/nprogress', '@vuepress-reco/vuepress-plugin-screenfull'],
   themeConfig: {
     nav: [
       { text: '首页', link: '/', icon: 'reco-home' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
       {
-        text: 'Docs',
+        text: '文档',
         icon: 'reco-message',
         items: [
           { text: 'api', link: '/docs/api/' }
         ]
       },
       {
-        text: 'Contact',
+        text: '联系我',
         icon: 'reco-message',
         items: [
           { text: 'GitHub', link: 'https://github.com/bytesgo', icon: 'reco-github' }
@@ -46,19 +48,19 @@ module.exports = {
         text: '标签' // 默认 “标签”
       }
     },
-    friendLink: [
-      {
-        title: 'leeyazhou',
-        desc: 'Enjoy when you can, and endure when you must.',
-        email: 'coderhook@gmail.com',
-        link: 'https://blog.bytesgo.com'
-      },
-      {
-        title: 'bytesgo.com',
-        desc: 'A simple and beautiful vuepress Blog & Doc theme.',
-        link: 'https://blog.bytesgo.com'
-      },
-    ],
+    // friendLink: [
+    //   {
+    //     title: 'leeyazhou',
+    //     desc: 'Enjoy when you can, and endure when you must.',
+    //     email: 'coderhook@gmail.com',
+    //     link: 'https://blog.bytesgo.com'
+    //   },
+    //   {
+    //     title: 'bytesgo.com',
+    //     desc: 'A simple and beautiful vuepress Blog & Doc theme.',
+    //     link: 'https://blog.bytesgo.com'
+    //   },
+    // ],
     logo: '/logo.png',
     // 搜索设置
     search: true,
@@ -70,7 +72,7 @@ module.exports = {
     // 作者
     author: 'leeyazhou',
     // 作者头像
-    authorAvatar: '/avatar.png',
+    // authorAvatar: '/avatar.png',
     // 备案号
     // record: 'xxxx',
     // 项目开始时间
