@@ -3,7 +3,7 @@ module.exports = {
   description: 'bytesgo.com',
   dest: 'dist',
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '/img/favicon.ico' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
     ["script", { src: "/js/demo.js" }]
   ],
@@ -62,7 +62,7 @@ module.exports = {
     //     link: 'https://blog.bytesgo.com'
     //   },
     // ],
-    logo: '/logo.png',
+    logo: '/img/logo.png',
     // 搜索设置
     search: true,
     searchMaxSuggestions: 10,
