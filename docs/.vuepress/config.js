@@ -8,8 +8,9 @@ module.exports = {
     ["script", { src: "/js/demo.js" }]
   ],
   theme: 'reco',
-  plugins: ['@vuepress/nprogress', '@vuepress-reco/vuepress-plugin-screenfull'],
+  plugins: ['@vuepress-reco/vuepress-plugin-screenfull'],
   themeConfig: {
+    smoothScroll:true,
     nav: [
       { text: '首页', link: '/', icon: 'reco-home' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
@@ -17,7 +18,7 @@ module.exports = {
         text: '文档',
         icon: 'reco-message',
         items: [
-          { text: 'api', link: '/docs/api/' }
+          { text: 'api', link: '/api/' }
         ]
       },
       {
@@ -29,7 +30,7 @@ module.exports = {
       }
     ],
     sidebar: {
-      '/docs/api/': [
+      '/api/': [
         '',
         'theme',
         'plugin',
