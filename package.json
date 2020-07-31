@@ -1,8 +1,10 @@
 {
-  "name": "bytesgo.com",
+  "name": "blog",
   "version": "1.0.0",
-  "description": "bytesgo.com",
+  "description": "blog",
   "main": "index.js",
+  "author": "leeyazhou",
+  "license": "MIT",
   "scripts": {
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
@@ -14,19 +16,15 @@
   "keywords": [
     "bytesgo"
   ],
-  "author": "leeyazhou",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bytesgo/bytesgo.com/issues"
   },
   "homepage": "https://github.com/bytesgo/bytesgo.com#readme",
   "devDependencies": {
-    "@vuepress-reco/vuepress-plugin-screenfull": "^1.0.1",
+    "@vuepress/plugin-back-to-top": "^1.5.2",
+    "@vuepress/plugin-medium-zoom": "^1.5.2",
     "@vuepress/plugin-nprogress": "^1.5.2",
-    "vuepress": "^1.5.2",
-    "vuepress-theme-reco": "1.4.6"
-  },
-  "dependencies": {
-    "vue-class-component": "^7.2.3"
+    "@vuepress/theme-blog": "^2.3.0",
+    "vuepress": "^1.5.2"
   }
 }
