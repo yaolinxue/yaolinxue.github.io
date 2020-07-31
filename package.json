@@ -1,7 +1,7 @@
 {
-  "name": "blog",
+  "name": "bytesgo.com",
   "version": "1.0.0",
-  "description": "blog",
+  "description": "blog.bytesgo.com",
   "main": "index.js",
   "author": "leeyazhou",
   "license": "MIT",
@@ -14,7 +14,10 @@
     "url": "git+https://github.com/bytesgo/bytesgo.com.git"
   },
   "keywords": [
-    "bytesgo"
+    "bytesgo",
+    "leeyazhou",
+    "离诌",
+    "bytesgo@163.com"
   ],
   "bugs": {
     "url": "https://github.com/bytesgo/bytesgo.com/issues"
