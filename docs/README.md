@@ -1,6 +1,6 @@
 ---
-title: about me
-author: leeyazhou
+title: ABOUT ME -- 姚林雪
+author: yaolinxue
 ---
 
 ## Hello nerds
