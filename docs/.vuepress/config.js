@@ -44,11 +44,11 @@ module.exports = {
             contact: [
                 {
                     type: 'github',
-                    link: 'https://github.com/vuejs/vuepress',
+                    link: 'https://github.com/bytesgo',
                 },
                 {
                     type: 'twitter',
-                    link: 'https://github.com/vuejs/vuepress',
+                    link: 'https://twitter.com/leeyazhou',
                 },
             ],
             copyright: [
