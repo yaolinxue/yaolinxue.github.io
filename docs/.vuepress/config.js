@@ -58,7 +58,7 @@ module.exports = {
                 },
                 {
                     text: 'MIT Licensed | Copyright © 2020-2021 bytesgo.com',
-                    link: 'github.com/bytesgo',
+                    link: 'https://github.com/bytesgo',
                 },
             ],
         },
