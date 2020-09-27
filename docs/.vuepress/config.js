@@ -6,7 +6,8 @@ module.exports = {
     head: [
         ['link', { rel: 'icon', href: '/img/favicon.ico' }],
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
-        ["script", { src: "/js/demo.js" }]
+        ["script", { src: "/js/demo.js" }],
+        ["script", { src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" }]
     ],
     themeConfig: {
         dateFormat: 'YYYY-MM-DD',
