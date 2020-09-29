@@ -1,6 +1,7 @@
 ---
 title: TensorFlow的55个经典案例
-date: 2020-09-04
+date: 2020-09
+author: leeyazhou
 categories:
     - tensorflow
 tags:
