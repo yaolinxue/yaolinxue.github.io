@@ -24,7 +24,7 @@ module.exports = {
         ],
         directories: [
             {
-                id: 'post',
+                id: '博客分享',
                 dirname: 'blog',
                 path: '/blog/',
                 itemPermalink: '/:year/:month/:day/:slug',
