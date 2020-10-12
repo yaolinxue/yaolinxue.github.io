@@ -6,7 +6,6 @@ categories:
 	- grpc
 tags:
     - grpc
-    - rpc
     - 微服务框架
 ---
 
