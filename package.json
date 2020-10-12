@@ -24,13 +24,11 @@
   },
   "homepage": "https://github.com/bytesgo/bytesgo.com#readme",
   "devDependencies": {
-    "@vuepress/plugin-back-to-top": "^1.6.0",
-    "@vuepress/plugin-medium-zoom": "^1.6.0",
-    "@vuepress/plugin-nprogress": "^1.6.0",
+    "@vuepress/plugin-back-to-top": "^1.5.2",
+    "@vuepress/plugin-medium-zoom": "^1.5.2",
+    "@vuepress/plugin-nprogress": "^1.5.2",
     "@vuepress/theme-blog": "^2.3.2",
-    "vuepress": "^1.6.0"
-  },
-  "dependencies": {
+    "vuepress": "^1.5.2",
     "@vssue/vuepress-plugin-vssue": "^1.4.6"
   }
 }
