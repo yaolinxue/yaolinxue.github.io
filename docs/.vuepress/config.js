@@ -47,32 +47,11 @@ module.exports = {
                 id: '博客分享',
                 dirname: 'blog',
                 path: '/blog/',
-                itemPermalink: '/:year/:month/:day/:slug',
-            },
-            {
-                id: 'writing',
-                dirname: '_writings',
-                path: '/',
-                itemPermalink: '/:year/:month/:day/:slug',
+                itemPermalink: '/:year/:month/:slug',
             },
         ],
-        comment: {
-            // Which service you'd like to use
-            service: 'vssue',
-            // The owner's name of repository to store the issues and comments.
-            owner: 'leeyazhou',
-            // The name of repository to store the issues and comments.
-            repo: 'bytesgo.com',
-            // The clientId & clientSecret introduced in OAuth2 spec.
-            clientId: 'f524e60f55892f87f3cb',
-            clientSecret: '306bffa447309506bc034a4529aac0408695114a',
-        },
         sitemap: {
             hostname: 'https://www.bytesgo.com'
-        },
-        newsletter: {
-            // Put your endpoint, not mine.
-            endpoint: "https://bytesgo.us2.list-manage.com/subscribe/post?u=648a673e513d2f974345a2532&amp;id=3be239bd6a"
         },
         globalPagination: {
             lengthPerPage: 15,
