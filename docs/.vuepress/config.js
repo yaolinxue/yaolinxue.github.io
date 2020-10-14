@@ -1,7 +1,7 @@
 module.exports = {
     title: 'bytesgo',
     description: 'Just playing around',
-    theme: '@vuepress/blog',
+    theme: '@vuepress/theme-blog',
     dest: 'dist',
     head: [
         ['link', {
