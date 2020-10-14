@@ -44,14 +44,19 @@ module.exports = {
             }
         ],
         directories: [{
-                id: '博客分享',
-                dirname: 'blog',
-                path: '/blog/',
-                itemPermalink: '/:year/:month/:slug',
-            },
-        ],
+            id: '博客分享',
+            dirname: 'blog',
+            path: '/blog/',
+            itemPermalink: '/:year/:month/:slug',
+        }, ],
         sitemap: {
             hostname: 'https://www.bytesgo.com'
+        },
+        comment: {
+            // Which service you'd like to use
+            service: 'disqus',
+            // The owner's name of repository to store the issues and comments.
+            shortname: 'www-bytesgo-com',
         },
         globalPagination: {
             lengthPerPage: 15,
