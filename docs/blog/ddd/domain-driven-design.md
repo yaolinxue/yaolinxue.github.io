@@ -3,9 +3,9 @@ title: 领域驱动设计（Domain-driven Design）
 date: 2020-09-01
 author: leeyazhou
 categories:
-    - ddd
+    - DDD
 tags:
-    - ddd
+    - DDD
     - 领域驱动设计
     - flower
     - Doamin-driven Design

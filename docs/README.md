@@ -10,3 +10,5 @@ I code on occasion, believe it or not. My latest deal is I'm making as many usef
 And I have a bady son named Zexi Li, so I have to work hard now.
 
 Wish you have a nice day.
+
+[My Blog](blog/)
