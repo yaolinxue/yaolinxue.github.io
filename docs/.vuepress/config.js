@@ -81,6 +81,10 @@ module.exports = {
                     text: 'MIT Licensed | Copyright © 2020-2021 bytesgo.com',
                     link: 'https://github.com/bytesgo',
                 },
+                {
+                    text: '京ICP备2021001196号-1',
+                    link: 'https://beian.miit.gov.cn/',
+                },
             ],
         },
     },
