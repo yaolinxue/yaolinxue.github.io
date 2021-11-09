@@ -27,19 +27,19 @@ module.exports = {
         nextLinks: true,
         prevLinks: true,
         nav: [{
-                text: '首页',
+                text: 'HOME',
                 link: '/'
             },
             {
-                text: '博客',
+                text: 'BLOG',
                 link: '/blog/'
             },
             {
-                text: '标签',
+                text: 'TAG',
                 link: '/tag/'
             },
             {
-                text: 'Github',
+                text: 'GITHUB',
                 link: 'https://github.com/bytesgo'
             }
         ],
@@ -80,11 +80,7 @@ module.exports = {
                 {
                     text: 'MIT Licensed | Copyright © 2020-2021 bytesgo.com',
                     link: 'https://github.com/bytesgo',
-                },
-                {
-                    text: '京ICP备2021001196号-1',
-                    link: 'https://beian.miit.gov.cn/',
-                },
+                }
             ],
         },
     },
