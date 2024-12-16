@@ -61,8 +61,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploy
     permissions:
-          pages: write      # to deploy to Pages
-          id-token: write  # to get the git history
+      pages: write # to deploy to Pages
+      id-token: write # to get the git history
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
