@@ -255,3 +255,4 @@ node_modules
 docs/.vuepress/dist
 dist
 .package-lock.json
+yarn.lock
