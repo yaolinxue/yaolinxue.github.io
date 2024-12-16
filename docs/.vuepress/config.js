@@ -149,7 +149,7 @@ export default defineUserConfig({
     mediumZoomPlugin({
       // 配置项
     }),
-    backToTopPlugin(),
+    backToTopPlugin({}),
     copyCodePlugin({
       // options
     }),
