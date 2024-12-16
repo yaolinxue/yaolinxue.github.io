@@ -1,0 +1,16 @@
+import comp from "/opt/code/nodejs/bytesgo2.com/docs/.vuepress/.temp/pages/blog/android/2020/ubuntu 20.04编译android-6.0.1_r77.html.vue"
+const data = JSON.parse("{\"path\":\"/blog/android/2020/ubuntu%2020.04%E7%BC%96%E8%AF%91android-6.0.1_r77.html\",\"title\":\"ubuntu 20.04编译android-6.0.1_r77\",\"lang\":\"zh-CN\",\"frontmatter\":{\"title\":\"ubuntu 20.04编译android-6.0.1_r77\",\"date\":\"2020-08-31T00:00:00.000Z\",\"categories\":[\"android\"],\"tags\":[\"android\",\"android-6.0.1_r77\",\"ubuntu 20.04\",\"源码编译\"]},\"headers\":[{\"level\":2,\"title\":\"缘起\",\"slug\":\"缘起\",\"link\":\"#缘起\",\"children\":[]},{\"level\":2,\"title\":\"前言\",\"slug\":\"前言\",\"link\":\"#前言\",\"children\":[]},{\"level\":2,\"title\":\"源码\",\"slug\":\"源码\",\"link\":\"#源码\",\"children\":[{\"level\":3,\"title\":\"配置repo\",\"slug\":\"配置repo\",\"link\":\"#配置repo\",\"children\":[]},{\"level\":3,\"title\":\"源码下载\",\"slug\":\"源码下载\",\"link\":\"#源码下载\",\"children\":[]}]}],\"git\":{},\"filePathRelative\":\"blog/android/2020/ubuntu 20.04编译android-6.0.1_r77.md\",\"excerpt\":\"<h2>缘起</h2>\\n<p>最近公司业务涉及到抓包的工作内容，所以要研究抓包的工作内容，由于对数据抓取的内容研究不多，所以在摸索中慢慢研究。由于在研究的过程中，需要经常请教一位对安全研究比较多的同事，而且正好他有一台闲置的手机（lg nexus 5），就送给我了（感谢感谢同事的大力支持）。</p>\\n<p>那么，现在最新的android系统已经升级到了android 11，为什么要研究这么老的版本的系统呢？主要有两方面的考虑：</p>\\n<ul>\\n<li>android 6以上的版本对抓包管理比较严格</li>\\n<li>lg nexus 5官方支持的最高版本是android 6，且nexus 5硬件配置比较低</li>\\n</ul>\"}")
+export { comp, data }
+
+if (import.meta.webpackHot) {
+  import.meta.webpackHot.accept()
+  if (__VUE_HMR_RUNTIME__.updatePageData) {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  }
+}
+
+if (import.meta.hot) {
+  import.meta.hot.accept(({ data }) => {
+    __VUE_HMR_RUNTIME__.updatePageData(data)
+  })
+}

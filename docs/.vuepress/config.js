@@ -1,104 +1,162 @@
-module.exports = {
-    title: 'bytesgo',
-    description: 'Just playing around',
-    theme: '@vuepress/theme-blog',
-    dest: 'dist',
-    head: [
-        ['link', {
-            rel: 'icon',
-            href: '/bytesgo.png'
-        }],
-        ['meta', {
-            name: 'viewport',
-            content: 'width=device-width,initial-scale=1,user-scalable=no'
-        }],
-        ["script", {
-            src: "/js/demo.js"
-        }],
-        ["script", {
-            src: "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        }]
+import { blogPlugin } from '@vuepress/plugin-blog'
+import { defaultTheme } from '@vuepress/theme-default'
+import { defineUserConfig } from 'vuepress'
+import { viteBundler } from '@vuepress/bundler-vite'
+import { docsearchPlugin } from '@vuepress/plugin-docsearch'
+import { copyCodePlugin } from '@vuepress/plugin-copy-code'
+import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
+import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
+import { catalogPlugin } from '@vuepress/plugin-catalog'
+
+export default defineUserConfig({
+  lang: 'zh-CN',
+
+  title: 'bytesgo',
+  description: 'bytesgo.com',
+
+  theme: defaultTheme({
+    logo: '/bytesgo.png',
+
+    navbar: [
+      {
+        text: 'Home',
+        link: '/',
+      },
+      {
+        text: 'Article',
+        link: '/article/',
+      },
+      {
+        text: 'Category',
+        link: '/category/',
+      },
+      {
+        text: 'Tag',
+        link: '/tag/',
+      },
+      {
+        text: 'Timeline',
+        link: '/timeline/',
+      },
     ],
-    themeConfig: {
-        dateFormat: 'YYYY年MM月',
-        smoothScroll: true,
-        summary: true,
-        lastUpdated: 'Last Updated',
-        nextLinks: true,
-        prevLinks: true,
-        nav: [{
-                text: 'HOME',
-                link: '/'
-            },
-            {
-                text: 'BLOG',
-                link: '/blog/'
-            },
-            {
-                text: 'TAG',
-                link: '/tag/'
-            },
-            {
-                text: 'GITHUB',
-                link: 'https://github.com/bytesgo'
-            }
-        ],
-        directories: [{
-            id: '博客分享',
-            dirname: 'blog',
-            path: '/blog/',
-            itemPermalink: '/:year/:month/:slug',
-        }, ],
-        sitemap: {
-            hostname: 'https://www.bytesgo.com'
+  }),
+
+  plugins: [
+    blogPlugin({
+      // Only files under posts are articles
+      filter: ({ filePathRelative }) =>
+        filePathRelative ? filePathRelative.startsWith('blog/') : false,
+
+      // Getting article info
+      getInfo: ({ frontmatter, title, data }) => ({
+        title,
+        author: frontmatter.author || '',
+        date: frontmatter.date || null,
+        category: frontmatter.category || [],
+        tag: frontmatter.tag || [],
+        excerpt:
+          // Support manually set excerpt through frontmatter
+          typeof frontmatter.excerpt === 'string'
+            ? frontmatter.excerpt
+            : data?.excerpt || '',
+      }),
+
+      // Generate excerpt for all pages excerpt those users choose to disable
+      excerptFilter: ({ frontmatter }) =>
+        !frontmatter.home &&
+        frontmatter.excerpt !== false &&
+        typeof frontmatter.excerpt !== 'string',
+
+      category: [
+        {
+          key: 'category',
+          getter: (page) => page.frontmatter.category || [],
+          layout: 'Category',
+          itemLayout: 'Category',
+          frontmatter: () => ({
+            title: 'Categories',
+            sidebar: false,
+          }),
+          itemFrontmatter: (name) => ({
+            title: `Category ${name}`,
+            sidebar: false,
+          }),
         },
-        comment: {
-            // Which service you'd like to use
-            service: 'disqus',
-            // The owner's name of repository to store the issues and comments.
-            shortname: 'www-bytesgo-com',
+        {
+          key: 'tag',
+          getter: (page) => page.frontmatter.tag || [],
+          layout: 'Tag',
+          itemLayout: 'Tag',
+          frontmatter: () => ({
+            title: 'Tags',
+            sidebar: false,
+          }),
+          itemFrontmatter: (name) => ({
+            title: `Tag ${name}`,
+            sidebar: false,
+          }),
         },
-        globalPagination: {
-            lengthPerPage: 15,
-            prevText: '<',
-            nextText: '>',
+      ],
+
+      type: [
+        {
+          key: 'article',
+          // Remove archive articles
+          filter: (page) => !page.frontmatter.archive,
+          layout: 'Article',
+          frontmatter: () => ({
+            title: 'Articles',
+            sidebar: false,
+          }),
+          // Sort pages with time and sticky
+          sorter: (pageA, pageB) => {
+            if (pageA.frontmatter.sticky && pageB.frontmatter.sticky)
+              return pageB.frontmatter.sticky - pageA.frontmatter.sticky
+
+            if (pageA.frontmatter.sticky && !pageB.frontmatter.sticky) return -1
+
+            if (!pageA.frontmatter.sticky && pageB.frontmatter.sticky) return 1
+
+            if (!pageB.frontmatter.date) return 1
+            if (!pageA.frontmatter.date) return -1
+
+            return (
+              new Date(pageB.frontmatter.date).getTime() -
+              new Date(pageA.frontmatter.date).getTime()
+            )
+          },
         },
-        footer: {
-            contact: [{
-                    type: 'github',
-                    link: 'https://github.com/bytesgo',
-                },
-                {
-                    type: 'twitter',
-                    link: 'https://twitter.com/bytesgo',
-                },
-            ],
-            copyright: [{
-                    text: 'Privacy Policy',
-                    link: 'https://policies.google.com/privacy?hl=en-US',
-                },
-                {
-                    text: 'MIT Licensed | Copyright © 2020-2021 bytesgo.com',
-                    link: 'https://github.com/bytesgo',
-                }
-            ],
+        {
+          key: 'timeline',
+          // Only article with date should be added to timeline
+          filter: (page) => page.frontmatter.date instanceof Date,
+          // Sort pages with time
+          sorter: (pageA, pageB) =>
+            new Date(pageB.frontmatter.date).getTime() -
+            new Date(pageA.frontmatter.date).getTime(),
+          layout: 'Timeline',
+          frontmatter: () => ({
+            title: 'Timeline',
+            sidebar: false,
+          }),
         },
-    },
-    markdown: {
-        lineNumbers: true,
-        // markdown-it-anchor 的选项
-        anchor: {
-            permalink: true
-        },
-        // markdown-it-toc 的选项
-        toc: {
-            includeLevel: [1, 2]
-        }
-    },
-    plugins: [
-        '@vuepress/nprogress',
-        '@vuepress/back-to-top',
-        '@vuepress/last-updated',
-        '@vuepress/medium-zoom'
-    ]
-}
+      ],
+      hotReload: true,
+    }),
+    docsearchPlugin({
+
+    }),
+    mediumZoomPlugin({
+      // 配置项
+    }),
+    backToTopPlugin(),
+    copyCodePlugin({
+      // options
+    }),
+    catalogPlugin({
+
+    }),
+  ],
+
+  bundler: viteBundler(),
+})
