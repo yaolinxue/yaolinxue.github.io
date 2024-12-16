@@ -53,24 +53,8 @@ jobs:
           path: docs/.vuepress/dist
           overwrite: true
           name: github-pages
-
-  # 部署工作
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    needs: build
-    runs-on: ubuntu-latest
-    name: Deploy
-    permissions:
-      pages: write # to deploy to Pages
-      id-token: write # to get the git history
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Deploy 🚀 # 部署
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          # 部署到 gh-pages 分支
-          artifact_name: github-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          branch: static-pages # 部署后提交到的分支
+          folder: docs/.vuepress/dist # 这里填打包好的目录名称
