@@ -47,7 +47,7 @@ jobs:
         run: yarn install # 或 pnpm install / yarn install / bun install
       - name: Build with VitePress
         run: yarn docs:build # 或 pnpm docs:build / yarn docs:build / bun run docs:build
-      - name: Upload artifact
+      - name: Upload-artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: docs/.vuepress/dist
@@ -69,8 +69,6 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           # 部署到 gh-pages 分支
-          artifact_name: gh-pages
-          # 部署目录为 VuePress 的默认输出目录
-          build_dir: docs/.vuepress/dist
+          artifact_name: Upload-artifact
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
