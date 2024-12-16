@@ -52,7 +52,7 @@ jobs:
         with:
           path: docs/.vuepress/dist
           overwrite: true
-          name: artifact
+          name: github-pages
 
   # 部署工作
   deploy:
@@ -71,6 +71,6 @@ jobs:
         uses: actions/deploy-pages@v4
         with:
           # 部署到 gh-pages 分支
-          artifact_name: artifact
+          artifact_name: github-pages
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
