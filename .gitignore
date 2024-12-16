@@ -254,3 +254,4 @@ $RECYCLE.BIN/
 node_modules
 docs/.vuepress/dist
 dist
+.package-lock.json
