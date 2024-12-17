@@ -257,3 +257,5 @@ dist
 .package-lock.json
 yarn.lock
 docs/.vuepress/cache
+docs/.vuepress/.cache
+docs/.vuepress/.temp

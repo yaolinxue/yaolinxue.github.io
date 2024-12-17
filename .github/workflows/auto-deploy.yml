@@ -1,5 +1,5 @@
 # build and deploy
-name: CI
+name: deploy
 
 on:
   push:

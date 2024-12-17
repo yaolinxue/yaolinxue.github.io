@@ -1,3 +1,0 @@
-import comp from "/opt/code/nodejs/bytesgo.com/docs/.vuepress/.temp/pages/index.html.vue"
-const data = JSON.parse("{\"path\":\"/\",\"title\":\"Hello nerds\",\"lang\":\"zh-CN\",\"frontmatter\":{\"home\":true},\"headers\":[],\"git\":{\"updatedTime\":1734348119000,\"contributors\":[{\"name\":\"leeyazhou\",\"username\":\"leeyazhou\",\"email\":\"bytesgo@163.com\",\"commits\":5,\"url\":\"https://github.com/leeyazhou\"},{\"name\":\"leeyazhou\",\"username\":\"leeyazhou\",\"email\":\"lee_yazhou@163.com\",\"commits\":6,\"url\":\"https://github.com/leeyazhou\"}]},\"filePathRelative\":\"README.md\"}")
-export { comp, data }
