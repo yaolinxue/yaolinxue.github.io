@@ -254,7 +254,7 @@ $RECYCLE.BIN/
 node_modules
 docs/.vuepress/dist
 dist
-.package-lock.json
+package-lock.json
 yarn.lock
 docs/.vuepress/.cache
 docs/.vuepress/.temp
