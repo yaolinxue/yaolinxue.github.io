@@ -1,5 +1,7 @@
 ---
 home: true
+heroText: null
+tagline: null
 ---
 
 # Hello nerds

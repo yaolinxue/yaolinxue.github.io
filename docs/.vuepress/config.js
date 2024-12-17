@@ -7,6 +7,7 @@ import { copyCodePlugin } from '@vuepress/plugin-copy-code'
 import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 import { catalogPlugin } from '@vuepress/plugin-catalog'
+import { feedPlugin } from '@vuepress/plugin-feed'
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -155,6 +156,11 @@ export default defineUserConfig({
     }),
     catalogPlugin({
 
+    }),
+    feedPlugin({
+      hostname: 'https://bytesgo.com',
+      rss: true,
+      footer: true,
     }),
   ],
 
