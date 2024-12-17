@@ -8,6 +8,10 @@ import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 import { backToTopPlugin } from '@vuepress/plugin-back-to-top'
 import { catalogPlugin } from '@vuepress/plugin-catalog'
 import { feedPlugin } from '@vuepress/plugin-feed'
+import { watermarkPlugin } from '@vuepress/plugin-watermark'
+import { nprogressPlugin } from '@vuepress/plugin-nprogress'
+import { copyrightPlugin } from '@vuepress/plugin-copyright'
+import { commentPlugin } from '@vuepress/plugin-comment'
 
 export default defineUserConfig({
   lang: 'zh-CN',
@@ -80,7 +84,7 @@ export default defineUserConfig({
           }),
           itemFrontmatter: (name) => ({
             title: `Category ${name}`,
-            sidebar: false,
+            sidebar: true,
           }),
         },
         {
@@ -161,6 +165,24 @@ export default defineUserConfig({
       hostname: 'https://bytesgo.com',
       rss: true,
       footer: true,
+    }),
+    watermarkPlugin({
+      enabled: true,
+      watermarkOptions:{
+        text: 'bytesgo',
+        globalAlpha: 0.3,
+        color: '#ff6700'
+      }
+    }),
+    nprogressPlugin(),
+    copyrightPlugin({
+      global: true,
+      footer: {
+        content: 'Copyright © 2019-present bytesgo',
+      },
+    }),
+    commentPlugin({
+      provider: 'Giscus'
     }),
   ],
 
