@@ -494,7 +494,7 @@ export default defineConfig({
                  * 打赏模块样式
                  */
                 type: 'simple',
-                aliPayQR: 'https://www.bytesgo.com/img/aliPayQR.jpg',
+                aliPayQR: 'https://www.bytesgo.com/img/aliPayQR.png',
                 weChatQR: 'https://www.bytesgo.com/img/weChatQR.png'
             })
         ]
