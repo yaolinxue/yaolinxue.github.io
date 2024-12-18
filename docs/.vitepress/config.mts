@@ -28,9 +28,13 @@ export default defineConfig({
         // 配置网站的图标（显示在浏览器的 tab 上）
         // ['link', { rel: 'icon', href: `${base}favicon.ico` }], // 修改了 base 这里也需要同步修改
         ['link', { rel: 'icon', href: 'img/favicon.ico' }],
+        // [
+        //     'link',
+        //     { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/style.css' }
+        // ],
         [
             'link',
-            { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/style.css' }
+            { rel: 'stylesheet', href: 'https://registry.npmmirror.com/lxgw-wenkai-screen-web/latest/files/style.css' }
         ]
     ],
     themeConfig: {
