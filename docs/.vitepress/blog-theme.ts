@@ -91,11 +91,11 @@ const blogTheme = getThemeConfig({
 
     // 评论插件
     comment: {
-        repo: 'leeyazhou/leeyazhou.github.io',
-        repoId: 'MDEwOlJlcG9zaXRvcnkyNDY1MTEyOTQ=',
-        category: 'Announcements',
-        categoryId: 'DIC_kwDODrF2vs4CgAF8',
-        inputPosition: 'top'
+        repo: 'bytesgo/bytesgo.github.io',
+        repoId: 'MDEwOlJlcG9zaXRvcnkyNzMxNzU1NzE=',
+        category: 'Q&A',
+        categoryId: 'MDE4OkRpc2N1c3Npb25DYXRlZ29yeTkxNzI0MjY=',
+        inputPosition: 'bottom'
     }
 })
 
