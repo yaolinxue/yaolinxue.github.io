@@ -58,16 +58,36 @@ export default defineConfig({
         // },
         // 导航栏
         nav: [
+            {
+                text: '关于',
+                link: '/about'
+            },
+            {
+                text: '技术随笔',
+                items: [
+                    { text: 'Java', link: '/blog/Java/' },
+                    { text: 'SpringBoot', link: '/blog/SpringBoot/' },
+                    { text: 'SSM', link: '/blog/SSM/' },
+                    { text: '计算机网络', link: '/blog/ComputerNetworks/' },
+                    { text: 'MySQL', link: '/blog/MySQL/' },
+                    { text: 'JavaWeb', link: '/blog/JavaWeb/' },
+                    { text: 'Linux', link: '/blog/Linux/' },
+                ]
+            },
             { text: '力扣每日一题', link: '/blog/leet-code/' },
-            { text: 'Java', link: '/blog/Java/' },
-            { text: 'SpringBoot', link: '/blog/SpringBoot/' },
-            { text: 'SSM', link: '/blog/SSM/' },
+            
             { text: '笔记', link: '/blog/Note/' },
-            { text: '计算机网络', link: '/blog/ComputerNetworks/' },
-            { text: 'MySQL', link: '/blog/MySQL/' },
-            { text: 'JavaWeb', link: '/blog/JavaWeb/' },
-            { text: 'Linux', link: '/blog/Linux/' },
-            { text: '生活随笔', link: '/blog/Life/' }
+            
+            { text: '生活随笔', link: '/blog/Life/' },
+            {
+                text: ' sponsors',
+                items: [
+                    {
+                        text: '成为赞助者',
+                        link: '/sponsor'
+                    }
+                ]
+            },
         ],
         // 友链
         socialLinks: [
