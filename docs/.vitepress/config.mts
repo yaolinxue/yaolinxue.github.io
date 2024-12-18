@@ -59,12 +59,12 @@ export default defineConfig({
         // 导航栏
         nav: [
             {
-                text: '关于',
-                link: '/about'
+                text: '首页',
+                link: '/'
             },
             {
-                text: '时间线',
-                link: '/timeline'
+                text: '关于',
+                link: '/about'
             },
             {
                 text: '技术随笔',
@@ -84,7 +84,7 @@ export default defineConfig({
             
             { text: '生活随笔', link: '/blog/Life/' },
             {
-                text: ' sponsors',
+                text: '赞助',
                 items: [
                     {
                         text: '成为赞助者',
