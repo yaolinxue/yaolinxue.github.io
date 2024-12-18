@@ -28,16 +28,17 @@ const blogTheme = getThemeConfig({
     // 页脚
     footer: {
         // message 字段支持配置为HTML内容，配置多条可以配置为数组
-        // message: '下面 的内容和图标都是可以修改的噢（当然本条内容也是可以隐藏的）',
+        message: 'www.bytesgo.com',
         copyright: 'MIT License | leeyazhou',
-        // icpRecord: {
-        //   name: '蜀ICP备19011724号',
-        //   link: 'https://beian.miit.gov.cn/'
-        // },
-        // securityRecord: {
-        //   name: '公网安备xxxxx',
-        //   link: 'https://www.beian.gov.cn/portal/index.do'
-        // },
+        version: false,
+        icpRecord: {
+          name: '京ICP备1xxxx号',
+          link: 'https://beian.miit.gov.cn/'
+        },
+        securityRecord: {
+          name: '公网安备xxxxx',
+          link: 'https://www.xxx.gov.cn/xxx'
+        },
     },
 
     // 主题色修改
@@ -96,7 +97,8 @@ const blogTheme = getThemeConfig({
         category: 'Q&A',
         categoryId: 'MDE4OkRpc2N1c3Npb25DYXRlZ29yeTkxNzI0MjY=',
         inputPosition: 'bottom'
-    }
+    },
+
 })
 
 export {blogTheme}

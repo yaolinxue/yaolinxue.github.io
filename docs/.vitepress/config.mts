@@ -63,6 +63,10 @@ export default defineConfig({
                 link: '/about'
             },
             {
+                text: '时间线',
+                link: '/timeline'
+            },
+            {
                 text: '技术随笔',
                 items: [
                     { text: 'Java', link: '/blog/Java/' },
