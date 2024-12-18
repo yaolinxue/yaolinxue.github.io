@@ -31,7 +31,7 @@ for month in *; do
         title=$(grep '^title: ' "$file" | awk -F': ' '{gsub(/\r|\n/, "", $2); print $2}')
         date=$(grep '^date: ' "$file" | awk -F': ' '{gsub(/\r|\n/, "", $2); print $2}')
         # 构建条目字符串
-        entry="$date $title ./$(basename "$file")"
+        entry="$date $title ./$month/$(basename "$file")"
         entries+=("$entry")
     done
 done
