@@ -521,5 +521,16 @@ export default defineConfig({
     },
     sitemap: {
         hostname: 'https://www.bytesgo.com'
-    }
+    },
+    locales: {
+        root: {
+          label: '简体中文',
+          lang: 'zh-cn'
+        },
+        en: {
+          label: 'English',
+          lang: 'en',
+          link: '/en/'
+        }
+      }
 })
