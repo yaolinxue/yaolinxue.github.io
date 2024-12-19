@@ -28,6 +28,7 @@ for file in *.md; do
     # 构建条目字符串
     entry="$date $title ./$(basename "$file")"
     entries+=("$entry")
+    echo "$entry"
 done
 
 # 按照日期降序排序条目
@@ -41,14 +42,14 @@ for entry in "${sorted_entries[@]}"; do
     # 获取年份
     year=$(echo "$entry" | cut -d '-' -f 1)
     # 获取月日和标题
-    month_day_title=$(echo "$entry" | cut -d ' ' -f 1,2 --output-delimiter=' ' | cut -d '-' -f 2,3)
+    month_day_title=$(echo "$entry" | cut -d ' ' -f 1,2 | cut -d '-' -f 1,2,3)
     # 获取文件路径
     path=$(echo "$entry" | cut -d ' ' -f 3-)
     
     # 检查是否更换年份
     if [[ "$year" != "$current_year" ]]; then
         echo "" >> index.md
-        echo "## $year" >> index.md
+        echo "## $year"$'\n' >> index.md
         current_year="$year"
     fi
     
