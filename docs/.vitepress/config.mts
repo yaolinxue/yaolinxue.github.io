@@ -71,7 +71,6 @@ export default defineConfig({
                 items: [
                     { text: 'Java', link: '/blog/Java/' },
                     { text: 'SpringBoot', link: '/blog/SpringBoot/' },
-                    { text: 'SSM', link: '/blog/SSM/' },
                     { text: '计算机网络', link: '/blog/ComputerNetworks/' },
                     { text: 'MySQL', link: '/blog/MySQL/' },
                     { text: 'JavaWeb', link: '/blog/JavaWeb/' },
@@ -81,10 +80,7 @@ export default defineConfig({
             { text: '力扣每日一题', link: '/blog/leet-code/' },
             {
                 text: '随笔',
-                items: [
-                    { text: '笔记', link: '/blog/Note/' },
-                    { text: '生活随笔', link: '/blog/Life/' },
-                ]
+                link: '/blog/Life/'
             },
             
             { text: '量化日志', link: '/stock/' },
@@ -319,60 +315,6 @@ export default defineConfig({
                 { text: '一文详解TCP', link: '/blog/ComputerNetworks/一文详解TCP' },
                 { text: '一文详解Socket', link: '/blog/ComputerNetworks/一文详解Socket' },
             ],
-            "/blog/SSM/": [
-                {
-                    text: 'SSM框架',
-                    collapsed: false,
-                    items: [
-                        { text: '初识SSM框架', link: '/blog/SSM/初识SSM框架' },
-                    ]
-                },
-                {
-                    text: 'MyBatis',
-                    collapsed: false,
-                    items: [
-                        { text: '初识MyBatis', link: '/blog/SSM/初识MyBatis' },
-                        { text: 'MyBatis-CRUD操作及配置解析', link: '/blog/SSM/MyBatis-CRUD操作及配置解析' },
-                        { text: 'MyBatis-ResultMap及分页', link: '/blog/SSM/MyBatis-ResultMap及分页' },
-                        { text: 'MyBatis-使用注解开发', link: '/blog/SSM/MyBatis-使用注解开发' },
-                        { text: 'MyBatis-一对多和多对一处理', link: '/blog/SSM/MyBatis-一对多和多对一处理' },
-                        { text: 'MyBatis-动态SQL', link: '/blog/SSM/MyBatis-动态SQL' },
-                        { text: 'MyBatis-缓存', link: '/blog/SSM/MyBatis-缓存' },
-                        { text: 'MyBatis-${}和#{}的区别及应用场景', link: '/blog/SSM/MyBatis-dollar和的well区别及应用场景' },
-                    ]
-                },
-                {
-                    text: 'Spring',
-                    collapsed: false,
-                    items: [
-                        { text: '初识Spring', link: '/blog/SSM/初识Spring' },
-                        { text: '快速上手Spring', link: '/blog/SSM/快速上手Spring' },
-                        { text: 'Spring-依赖注入', link: '/blog/SSM/Spring-依赖注入' },
-                        { text: 'Spring-自动装配', link: '/blog/SSM/Spring-自动装配' },
-                        { text: 'Spring-使用注解开发', link: '/blog/SSM/Spring-使用注解开发' },
-                        { text: 'Spring中Bean的配置和Bean的注入', link: '/blog/SSM/Spring中Bean的配置和Bean的注入' },
-                        { text: 'Spring-代理模式', link: '/blog/SSM/Spring-代理模式' },
-                        { text: 'Spring-AOP', link: '/blog/SSM/Spring-AOP' },
-                        { text: 'Spring-整合MyBatis', link: '/blog/SSM/Spring-整合MyBatis' },
-                        { text: 'Spring-声明式事务', link: '/blog/SSM/Spring-声明式事务' },
-                    ]
-                },
-                {
-                    text: 'SpringMVC',
-                    collapsed: false,
-                    items: [
-                        { text: '初识SpringMVC', link: '/blog/SSM/初识SpringMVC' },
-                        { text: '第一个SpringMVC程序', link: '/blog/SSM/第一个SpringMVC程序' },
-                        { text: 'SpringMVC-RestFul和控制器', link: '/blog/SSM/SpringMVC-RestFul和控制器' },
-                        { text: 'SpringMVC-参数接收处理和结果跳转', link: '/blog/SSM/SpringMVC-参数接收处理和结果跳转' },
-                        { text: '整合SSM框架', link: '/blog/SSM/整合SSM框架' },
-                        { text: 'SpringMVC-JSON交互处理', link: '/blog/SSM/SpringMVC-JSON交互处理' },
-                        { text: 'SpringMVC-AJAX研究', link: '/blog/SSM/SpringMVC-AJAX研究' },
-                        { text: 'SpringMVC-表现层数据封装和异常处理', link: '/blog/SSM/SpringMVC-表现层数据封装和异常处理' },
-                        { text: 'SpringMVC-拦截器+文件上传下载', link: '/blog/SSM/SpringMVC-拦截器+文件上传下载' },
-                    ]
-                }
-            ],
             "/blog/SpringBoot/": [
                 {
                     text: 'SpringBoot',
@@ -405,67 +347,6 @@ export default defineConfig({
                         { text: '集成Swagger与Springdoc', link: '/blog/SpringBoot/集成Swagger与Springdoc' },
                         { text: 'WebClient的基本使用', link: '/blog/SpringBoot/WebClient的基本使用' },
                         { text: '定时任务框架XXL-Job', link: '/blog/SpringBoot/定时任务框架XXL-Job' }
-                    ]
-                }
-            ],
-            "/blog/Note/": [
-                {
-                    text: 'Maven',
-                    collapsed: false,
-                    items: [
-                        { text: 'Maven 的基本使用', link: '/blog/Note/Maven的基本使用' },
-                        { text: 'Maven 插件', link: '/blog/Note/Maven插件' },
-                        { text: 'Maven 导入本地jar包', link: '/blog/Note/Maven导入本地jar包' },
-                        { text: 'Maven SNAPSHOT', link: '/blog/Note/Maven SNAPSHOT' },
-                        { text: 'Maven 依赖', link: '/blog/Note/Maven依赖' },
-                        { text: 'Maven 继承与聚合', link: '/blog/Note/Maven继承与聚合' },
-                        { text: 'Maven settings.xml 配置文件解读', link: '/blog/Note/Maven settings.xml 配置文件解读' }
-                    ]
-                },
-                {
-                    text: 'Elasticsearch',
-                    collapsed: false,
-                    items: [
-                        { text: 'Elasticsearch 入门', link: '/blog/Note/Elasticsearch入门' },
-                        { text: 'Elasticsearch 分页查询', link: '/blog/Note/Elasticsearch分页查询' }
-                    ]
-                },
-                {
-                    text: 'RabbitMQ',
-                    collapsed: false,
-                    items: [
-                        { text: 'RabbitMQ 入门', link: '/blog/Note/RabbitMQ入门' },
-                        { text: 'RabbitMQ 进阶', link: '/blog/Note/RabbitMQ进阶' }
-                    ]
-                },
-                {
-                    text: 'Docker',
-                    collapsed: false,
-                    items: [
-                        { text: 'Docker 入门', link: '/blog/Note/Docker入门' }
-                    ]
-                },
-                {
-                    text: 'Kubernetes',
-                    collapsed: false,
-                    items: [
-                        { text: 'Kubernetes 基础概念', link: '/blog/Note/Kubernetes基础概念' }
-                    ]
-                },
-                {
-                    text: 'Others',
-                    collapsed: false,
-                    items: [
-                        { text: '分布式中的 CAP 理论', link: '/blog/Note/分布式中的CAP理论' },
-                        { text: 'JUnit4 的使用教程', link: '/blog/Note/JUnit4的使用教程' },
-                        { text: '一文详解回调地狱', link: '/blog/Note/一文详解回调地狱' },
-                        { text: '初识 JWT', link: '/blog/Note/初识JWT' },
-                        { text: '浅谈 CSRF 攻击', link: '/blog/Note/浅谈CSRF攻击' },
-                        { text: '浅谈 XSS 攻击', link: '/blog/Note/浅谈XSS攻击' },
-                        { text: '负载均衡集群中的 Session 解决方案', link: '/blog/Note/负载均衡集群中的Session解决方案' },
-                        { text: '项目开发和管理流程', link: '/blog/Note/项目开发和管理流程' },
-                        { text: '电商架构演进之路', link: '/blog/Note/电商架构演进之路' },
-                        { text: '初识微服务', link: '/blog/Note/初识微服务' },
                     ]
                 }
             ],
