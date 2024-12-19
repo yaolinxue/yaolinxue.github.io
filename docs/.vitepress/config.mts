@@ -78,10 +78,7 @@ export default defineConfig({
                 ]
             },
             { text: '力扣每日一题', link: '/blog/leet-code/' },
-            {
-                text: '随笔',
-                link: '/blog/Life/'
-            },
+            {text: '随笔',link: '/blog/Life/'},
             
             { text: '量化日志', link: '/stock/' },
             {
