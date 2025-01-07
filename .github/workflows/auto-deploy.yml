@@ -17,7 +17,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: yarn install
+      - run: yarn install && cd docs/stock && bash .index.sh && cd -
       - run: yarn docs:build
 
       - name: Deploy
