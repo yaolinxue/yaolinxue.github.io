@@ -74,7 +74,7 @@ const blogTheme = getThemeConfig({
             {type: 'text', content: '👇 我的微信 👇'},
             {
                 type: 'image',
-                src: 'img/wechat.png',
+                src: '/img/wechat.png',
                 style: 'display: inline-block;width:46%;padding-right:6px'
             },
             {
