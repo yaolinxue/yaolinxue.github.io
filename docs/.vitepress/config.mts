@@ -20,7 +20,7 @@ export default defineConfig({
     // 仓库名
     // base: '/leeyazhou.github.io/',
     lang: 'zh-cn',
-    title: 'leeyazhou',
+    title: 'leeyazhou - 兴安安国, 自立立人',
     description: '为学应尽毕生力，攀高须贵少年时',
     lastUpdated: true,
     // 详见：https://vitepress.dev/zh/reference/site-config#head
