@@ -35,7 +35,7 @@ export default defineConfig({
         [
             'link',
             { rel: 'stylesheet', href: 'https://registry.npmmirror.com/lxgw-wenkai-screen-web/latest/files/style.css' }
-        ]
+        ],
     ],
     themeConfig: {
         // 展示 2,3 级标题在目录中
