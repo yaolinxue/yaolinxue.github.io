@@ -36,6 +36,21 @@ export default defineConfig({
             'link',
             { rel: 'stylesheet', href: 'https://registry.npmmirror.com/lxgw-wenkai-screen-web/latest/files/style.css' }
         ],
+        [
+            'script',
+            {},
+            `
+            <script>
+            var _hmt = _hmt || [];
+            (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?13deb3118acd0041fe7f3fc5c44a48ef";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+            })();
+            </script>
+            `,
+          ],
     ],
     themeConfig: {
         // 展示 2,3 级标题在目录中
