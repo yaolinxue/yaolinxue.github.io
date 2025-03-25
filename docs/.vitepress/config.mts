@@ -60,7 +60,7 @@ export default defineConfig({
         returnToTopLabel: '回到顶部',
         sidebarMenuLabel: '相关文章',
         lastUpdated: {
-            Text: '上次更新于'
+            text: '上次更新于'
         },
         // 设置logo
         logo: '/img/favicon.ico',
