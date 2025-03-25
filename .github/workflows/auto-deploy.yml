@@ -3,10 +3,10 @@ name: deploy
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
-  build-and-deploy:
+  auto-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -17,7 +17,8 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: yarn install && cd docs/stock && bash .index.sh && cd -
+      - run: yarn install
+      - run: cd docs/stock && bash .index.sh && cd -
       - run: yarn docs:build
 
       - name: Deploy
