@@ -82,11 +82,8 @@ export default defineConfig({
             {
                 text: '技术随笔',
                 items: [
-                    { text: 'Java', link: '/blog/Java/' },
-                    { text: 'SpringBoot', link: '/blog/SpringBoot/' },
                     { text: '计算机网络', link: '/blog/ComputerNetworks/' },
                     { text: 'MySQL', link: '/blog/MySQL/' },
-                    { text: 'JavaWeb', link: '/blog/JavaWeb/' },
                     { text: 'Linux', link: '/blog/Linux/' },
                 ]
             },
@@ -250,51 +247,6 @@ export default defineConfig({
                     ]
                 }
             ],
-            "/blog/Java/": [
-                { text: 'Java BufferedReader流', link: '/blog/Java/Java BufferedReader流' },
-                { text: 'Java IO', link: '/blog/Java/Java IO' },
-                { text: 'Java Optional类', link: '/blog/Java/Java Optional类' },
-                { text: 'Java Stream', link: '/blog/Java/Java Stream' },
-                { text: 'Java 双端队列 Deque', link: '/blog/Java/Java 双端队列 Deque' },
-                { text: 'Java 正则表达式', link: '/blog/Java/Java 正则表达式' },
-                { text: 'Java 泛型', link: '/blog/Java/Java 泛型' },
-                {
-                    text: 'Java中为什么使用向上转型而不直接创建子类对象',
-                    link: '/blog/Java/Java中为什么使用向上转型而不直接创建子类对象'
-                },
-                { text: 'Java中实现POJO类的序列化', link: '/blog/Java/Java中实现POJO类的序列化' },
-                { text: 'Java的注解与反射机制', link: '/blog/Java/Java的注解与反射机制' },
-                { text: 'Java集合框架综述', link: '/blog/Java/Java集合框架综述' },
-                { text: 'JDBC各个类的详解', link: '/blog/Java/JDBC各个类的详解' },
-                { text: '初识多线程', link: '/blog/Java/初识多线程' }
-            ],
-            "/blog/JavaWeb/": [
-                { text: 'xml总结', link: '/blog/JavaWeb/xml总结' },
-                { text: 'Web概述', link: '/blog/JavaWeb/Web概述' },
-                { text: 'HTTP协议', link: '/blog/JavaWeb/HTTP协议' },
-                { text: '会话技术', link: '/blog/JavaWeb/会话技术' },
-                {
-                    text: 'HTTP协议无状态中的【状态】到底指的是什么？！',
-                    link: '/blog/JavaWeb/HTTP协议无状态中的【状态】到底指的是什么？！'
-                },
-                {
-                    text: 'Cookie和Session、SessionID的那些事儿',
-                    link: '/blog/JavaWeb/Cookie和Session、SessionID的那些事儿'
-                },
-                { text: 'Servlet总结', link: '/blog/JavaWeb/Servlet总结' },
-                { text: 'Request和Response', link: '/blog/JavaWeb/Request和Response' },
-                { text: 'Tomcat深入理解', link: '/blog/JavaWeb/Tomcat深入理解' },
-                { text: 'JSP总结', link: '/blog/JavaWeb/JSP总结' },
-                { text: 'JSTL和EL表达式', link: '/blog/JavaWeb/JSTL和EL表达式' },
-                { text: 'MVC模式和三层架构', link: '/blog/JavaWeb/MVC模式和三层架构' },
-                { text: 'JSON和AJAX总结', link: '/blog/JavaWeb/JSON和AJAX总结' },
-                { text: 'Filter和Listener总结', link: '/blog/JavaWeb/Filter和Listener总结' },
-                {
-                    text: 'J2EE开发开发中PO,BO,VO,DTO,POJO,DAO的概念及其作用',
-                    link: '/blog/JavaWeb/J2EE开发开发中PO,BO,VO,DTO,POJO,DAO的概念及其作用'
-                },
-                { text: 'Java开发的主流框架演变', link: '/blog/JavaWeb/Java开发的主流框架演变' },
-            ],
             "/blog/MySQL/": [
                 { text: '初识MySQL', link: '/blog/MySQL/初识MySQL' },
                 { text: '数据库操作', link: '/blog/MySQL/数据库操作' },
@@ -324,41 +276,6 @@ export default defineConfig({
                 { text: '物理层、数据链路层、网络层', link: '/blog/ComputerNetworks/物理层、数据链路层、网络层' },
                 { text: '一文详解TCP', link: '/blog/ComputerNetworks/一文详解TCP' },
                 { text: '一文详解Socket', link: '/blog/ComputerNetworks/一文详解Socket' },
-            ],
-            "/blog/SpringBoot/": [
-                {
-                    text: 'SpringBoot',
-                    collapsed: false,
-                    items: [
-                        { text: '迈入前后端分离时代', link: '/blog/SpringBoot/迈入前后端分离时代' },
-                        { text: 'Maven的进阶使用', link: '/blog/SpringBoot/Maven的进阶使用' },
-                        { text: '初识SpringBoot', link: '/blog/SpringBoot/初识SpringBoot' },
-                        {
-                            text: '启动剖析之pom.xml、@SpringBootApplication',
-                            link: '/blog/SpringBoot/启动剖析之pom.xml、@SpringBootApplication'
-                        },
-                        { text: '启动剖析之SpringApplication.run', link: '/blog/SpringBoot/启动剖析之SpringApplication.run' },
-                        { text: 'yaml配置注入', link: '/blog/SpringBoot/yaml配置注入' },
-                        { text: '多环境开发配置', link: '/blog/SpringBoot/多环境开发配置' },
-                        { text: '自动配置原理', link: '/blog/SpringBoot/自动配置原理' },
-                        { text: '自定义Starter', link: '/blog/SpringBoot/自定义Starter' },
-                        { text: 'SpringBootTest详解', link: '/blog/SpringBoot/SpringBootTest详解' },
-                        { text: '整合JDBC', link: '/blog/SpringBoot/整合JDBC' },
-                        { text: '整合Druid', link: '/blog/SpringBoot/整合Druid' },
-                        { text: '整合MyBatis', link: '/blog/SpringBoot/整合MyBatis' },
-                        {
-                            text: '全局统一响应格式、参数校验、异常处理',
-                            link: '/blog/SpringBoot/全局统一响应格式、参数校验、异常处理'
-                        },
-                        { text: 'Redis的基本使用', link: '/blog/SpringBoot/Redis的基本使用' },
-                        { text: '缓存注解Spring-Cache', link: '/blog/SpringBoot/缓存注解Spring-Cache' },
-                        { text: '分库分表与Sharding-JDBC', link: '/blog/SpringBoot/分库分表与Sharding-JDBC' },
-                        { text: 'Nginx的使用教程', link: '/blog/SpringBoot/Nginx的使用教程' },
-                        { text: '集成Swagger与Springdoc', link: '/blog/SpringBoot/集成Swagger与Springdoc' },
-                        { text: 'WebClient的基本使用', link: '/blog/SpringBoot/WebClient的基本使用' },
-                        { text: '定时任务框架XXL-Job', link: '/blog/SpringBoot/定时任务框架XXL-Job' }
-                    ]
-                }
             ],
         },
     },
