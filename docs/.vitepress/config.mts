@@ -18,9 +18,9 @@ export default defineConfig({
     // 继承博客主题(@sugarat/theme)
     extends: blogTheme,
     // 仓库名
-    // base: '/leeyazhou.github.io/',
+    // base: '/yaolinxue.github.io/',
     lang: 'zh-cn',
-    title: 'leeyazhou - 兴安安国, 自立立人',
+    title: 'yaolinxue - 兴安安国, 自立立人',
     description: '为学应尽毕生力，攀高须贵少年时',
     lastUpdated: true,
     // 详见：https://vitepress.dev/zh/reference/site-config#head
@@ -105,7 +105,7 @@ export default defineConfig({
         socialLinks: [
             {
                 icon: 'github',
-                link: 'https://github.com/leeyazhou'
+                link: 'https://github.com/yaolinxue'
             }
         ],
         // 侧边栏

@@ -2,7 +2,7 @@
   "name": "bytesgo",
   "version": "1.0.0",
   "private": true,
-  "author": "leeyazhou",
+  "author": "yaolinxue",
   "license": "MIT",
   "scripts": {
     "docs:dev": "vitepress dev docs",

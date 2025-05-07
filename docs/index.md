@@ -9,7 +9,7 @@ blog:
   # 移动端隐藏头部头像展示
   minScreenAvatar: false
   # 设置首页的 banner 信息
-  name: leeyazhou's Blog
+  name: yaolinxue's Blog
   motto: 兴安安国, 自立立人
   inspiring:
     - 知行合一

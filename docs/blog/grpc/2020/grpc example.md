@@ -1,7 +1,7 @@
 ---
 title: grpc-example 基于gRPC实现的简单rpc框架
 date: 2020-10-01
-author: leeyazhou
+author: yaolinxue
 categories:
 	- grpc
 tags:
@@ -110,7 +110,7 @@ pom.xml中配置依赖的gRPC版本号
 ``` 
 syntax = "proto3";
 
-option java_package = "com.github.leeyazhou.grpc";
+option java_package = "com.github.yaolinxue.grpc";
 option java_multiple_files = true;
 option java_outer_classname = "CrpcProtocol";
 
@@ -139,7 +139,7 @@ mvn protobuf:compile-custom
 Invocation.java
 
 ``` 
-package com.github.leeyazhou.grpc.core;
+package com.github.yaolinxue.grpc.core;
 
 public class Invocation {
 
@@ -179,7 +179,7 @@ public class Invocation {
 Response.java
 
 ``` 
-package com.github.leeyazhou.grpc.core;
+package com.github.yaolinxue.grpc.core;
 
 public class Response {
 
@@ -220,7 +220,7 @@ public class Response {
 GrpcServer.java 
 
 ``` 
-package com.github.leeyazhou.grpc.core.server;
+package com.github.yaolinxue.grpc.core.server;
 
 import java.io.IOException;
 
@@ -258,15 +258,15 @@ public class GrpcServer {
 GrpcServerHandler.java负责处理接收到的请求，并转发给ServiceHandler.java处理，处理完成后响应给请求端。
 
 ``` 
-package com.github.leeyazhou.grpc.core.server;
+package com.github.yaolinxue.grpc.core.server;
 
-import com.github.leeyazhou.grpc.MessageServiceGrpc.MessageServiceImplBase;
-import com.github.leeyazhou.grpc.core.Invocation;
-import com.github.leeyazhou.grpc.core.Response;
-import com.github.leeyazhou.grpc.core.serializer.JSONSerializer;
-import com.github.leeyazhou.grpc.core.serializer.Serializer;
-import com.github.leeyazhou.grpc.RequestGrpcMessage;
-import com.github.leeyazhou.grpc.ResponseGrpcMessage;
+import com.github.yaolinxue.grpc.MessageServiceGrpc.MessageServiceImplBase;
+import com.github.yaolinxue.grpc.core.Invocation;
+import com.github.yaolinxue.grpc.core.Response;
+import com.github.yaolinxue.grpc.core.serializer.JSONSerializer;
+import com.github.yaolinxue.grpc.core.serializer.Serializer;
+import com.github.yaolinxue.grpc.RequestGrpcMessage;
+import com.github.yaolinxue.grpc.ResponseGrpcMessage;
 import com.google.protobuf.ByteString;
 
 import io.grpc.stub.StreamObserver;
@@ -314,13 +314,13 @@ public class GrpcServerHandler extends MessageServiceImplBase {
 ServiceHandler.java
 
 ``` 
-package com.github.leeyazhou.grpc.core.server;
+package com.github.yaolinxue.grpc.core.server;
 
 import java.lang.reflect.Method;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.github.leeyazhou.grpc.core.Invocation;
+import com.github.yaolinxue.grpc.core.Invocation;
 
 public class ServiceHandler {
 	private Map<String, Object> services = new ConcurrentHashMap<>();
@@ -357,18 +357,18 @@ public class ServiceHandler {
 GrpcClient.java
 
 ``` 
-package com.github.leeyazhou.grpc.core.client;
+package com.github.yaolinxue.grpc.core.client;
 
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.github.leeyazhou.grpc.MessageServiceGrpc;
-import com.github.leeyazhou.grpc.RequestGrpcMessage;
-import com.github.leeyazhou.grpc.ResponseGrpcMessage;
-import com.github.leeyazhou.grpc.core.Invocation;
-import com.github.leeyazhou.grpc.core.Response;
-import com.github.leeyazhou.grpc.core.serializer.JSONSerializer;
-import com.github.leeyazhou.grpc.core.serializer.Serializer;
+import com.github.yaolinxue.grpc.MessageServiceGrpc;
+import com.github.yaolinxue.grpc.RequestGrpcMessage;
+import com.github.yaolinxue.grpc.ResponseGrpcMessage;
+import com.github.yaolinxue.grpc.core.Invocation;
+import com.github.yaolinxue.grpc.core.Response;
+import com.github.yaolinxue.grpc.core.serializer.JSONSerializer;
+import com.github.yaolinxue.grpc.core.serializer.Serializer;
 import com.google.protobuf.ByteString;
 
 import io.grpc.ManagedChannel;
@@ -476,4 +476,4 @@ public class GrpcConsumer {
 
 ## 其他
 
-源码地址[github.com/leeyazhou/grpc-example](https://github.com/leeyazhou/grpc-example)
+源码地址[github.com/yaolinxue/grpc-example](https://github.com/yaolinxue/grpc-example)

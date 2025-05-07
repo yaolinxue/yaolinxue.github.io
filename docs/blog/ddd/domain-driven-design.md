@@ -1,7 +1,7 @@
 ---
 title: 领域驱动设计（Domain-driven Design）
 date: 2020-09-01
-author: leeyazhou
+author: yaolinxue
 categories:
     - DDD
 tags:

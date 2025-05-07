@@ -6,9 +6,9 @@ import {getThemeConfig, SearchConfig} from '@sugarat/theme/node'
 
 // const baseUrl = 'https://sugarat.top'
 // const RSS: Theme.RSSOptions = {
-//   title: 'leeyazhou',
+//   title: 'yaolinxue',
 //   baseUrl,
-//   copyright: 'Copyright (c) 2018-present, leeyazhou',
+//   copyright: 'Copyright (c) 2018-present, yaolinxue',
 //   description: '自立立人, 兴安安国',
 //   language: 'zh-cn',
 //   image: 'https://img.cdn.sugarat.top/mdImg/MTY3NDk5NTE2NzAzMA==674995167030',
@@ -34,7 +34,7 @@ const blogTheme = getThemeConfig({
     footer: {
         // message 字段支持配置为HTML内容，配置多条可以配置为数组
         message: 'www.bytesgo.com',
-        copyright: 'MIT License | leeyazhou',
+        copyright: 'MIT License | yaolinxue',
         version: false,
         icpRecord: {
           name: '京ICP备1xxxx号',
@@ -50,7 +50,7 @@ const blogTheme = getThemeConfig({
     themeColor: 'el-blue',
 
     // 文章默认作者
-    author: 'leeyazhou',
+    author: 'yaolinxue',
 
     // 友链
     friend: [
