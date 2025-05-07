@@ -3,7 +3,7 @@ layout: home
 # 首页部分元素定制
 blog:
   # 设置logo
-  logo: img/bytesgo.png
+  logo: img/yaolinxue.png
   # 设置头像分离展示模式
   avatarMode: card
   # 移动端隐藏头部头像展示

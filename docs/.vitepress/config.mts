@@ -287,13 +287,13 @@ export default defineConfig({
                  * 打赏模块样式
                  */
                 type: 'simple',
-                aliPayQR: 'https://www.bytesgo.com/img/aliPayQR.png',
-                weChatQR: 'https://www.bytesgo.com/img/weChatQR.png'
+                aliPayQR: 'https://www.yaolinxue.com/img/aliPayQR.png',
+                weChatQR: 'https://www.yaolinxue.com/img/weChatQR.png'
             })
         ]
     },
     sitemap: {
-        hostname: 'https://www.bytesgo.com'
+        hostname: 'https://www.yaolinxue.com'
     },
     locales: {
         root: {

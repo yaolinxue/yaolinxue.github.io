@@ -42,9 +42,9 @@ PR [#866](https://github.com/sofastack/sofa-rpc/pull/866)
 
 ## 联系方式
 
-- Mail: [bytesgo@163.com](mailto:bytesgo@163.com)
-- Github: [https://github.com/bytesgo](https://github.com/bytesgo)
-- Twitter: [https://twitter.com/bytesgo](https://twitter.com/bytesgo)
+- Mail: [yaolinxue@163.com](mailto:yaolinxue@163.com)
+- Github: [https://github.com/yaolinxue](https://github.com/yaolinxue)
+- Twitter: [https://twitter.com/yaolinxue](https://twitter.com/yaolinxue)
 
 ## 最后
 

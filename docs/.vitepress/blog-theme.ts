@@ -33,7 +33,7 @@ const blogTheme = getThemeConfig({
     // 页脚
     footer: {
         // message 字段支持配置为HTML内容，配置多条可以配置为数组
-        message: 'www.bytesgo.com',
+        message: 'www.yaolinxue.com',
         copyright: 'MIT License | yaolinxue',
         version: false,
         icpRecord: {
@@ -97,7 +97,7 @@ const blogTheme = getThemeConfig({
 
     // 评论插件
     comment: {
-        repo: 'bytesgo/bytesgo.github.io',
+        repo: 'yaolinxue/yaolinxue.github.io',
         repoId: 'MDEwOlJlcG9zaXRvcnkyNzMxNzU1NzE=',
         category: 'Q&A',
         categoryId: 'MDE4OkRpc2N1c3Npb25DYXRlZ29yeTkxNzI0MjY=',
